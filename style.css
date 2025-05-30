@@ -94,6 +94,21 @@ h1, h2, .section-title {
   filter: drop-shadow(0 0 12px #ff99ff);
   transform: rotate(-8deg);
 }
+@media (max-width: 768px) {
+  .side-decor {
+    display: none; /* hides stars/hearts on mobile */
+  }
+
+  .content, .scroll-section {
+    padding: 2rem 1rem;
+    max-width: 90%;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+}
+
 
 
 
