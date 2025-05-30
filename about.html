@@ -1,11 +1,18 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About • MIIMIIXL</title>
+  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal Styles -->
   <style>
     body {
       margin: 0;
@@ -45,6 +52,7 @@
     h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      font-family: 'Quicksand', sans-serif;
     }
 
     p {
@@ -52,17 +60,44 @@
       line-height: 1.6;
       color: #ccc;
     }
+
+    /* Side decor styles */
+    .side-decor {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 999;
+      pointer-events: none;
+    }
+
+    .left-decor {
+      left: 60px;
+    }
+
+    .right-decor {
+      right: 60px;
+    }
+
+    .side-star {
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(0 0 12px #ff99ff);
+      transform: rotate(-8deg);
+    }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
+    <a href="lore.html">Lore</a>
   </nav>
 
+  <!-- Main Content -->
   <section class="content">
     <h1>About MIIMIIXL™</h1>
     <p>
@@ -70,9 +105,18 @@
       From coding and design to full digital brand empires, MIIMIIXL crafts every line of code and creative vision from her signature ethos: <em>“Neon Soul • Frosted Chrome • Digital Mind.”</em>
     </p>
     <p>
-      Welcome to her world — Welcome to the source. Stay sharp. Stay charged..
+      Welcome to her world — Welcome to the source. Stay sharp. Stay charged.
     </p>
   </section>
+
+  <!-- Star Side Decorations -->
+  <div class="side-decor left-decor">
+    <img src="MIIMIIXL Brand Images/chrome-star.png" alt="Left Neon Star" class="side-star" />
+  </div>
+
+  <div class="side-decor right-decor">
+    <img src="MIIMIIXL Brand Images/chrome-star.png" alt="Right Neon Star" class="side-star" />
+  </div>
 
 </body>
 </html>
